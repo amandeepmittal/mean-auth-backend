@@ -1,6 +1,6 @@
 {
   "name": "mean-auth-backend-boilerplate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "User Auth RESTful API for MEAN Stack applications",
   "private": true,
   "scripts": {
@@ -14,6 +14,7 @@
     "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
+    "bcryptjs": "2.4.3",
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "cors": "2.8.3",
@@ -21,6 +22,8 @@
     "eslint": "3.19.0",
     "express": "~4.15.2",
     "jade": "~1.11.0",
+    "jwt-simple": "0.5.1",
+    "moment": "2.18.1",
     "mongoose": "4.9.4",
     "morgan": "~1.8.1",
     "snyk": "^1.29.0"

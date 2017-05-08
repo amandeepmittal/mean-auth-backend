@@ -13,6 +13,7 @@ require('./config/database.config');
 const app = express();
 
 const api = require('./routes/api/index');
+const userApi = require('./routes/api/user');
 
 // View engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Import API
 app.use('/api', api);
+app.use('/api/user', userApi);
 
 if (process.env.NODE_ENV === 'development') {
 	console.log('==> Dev mode <== enabled!')
