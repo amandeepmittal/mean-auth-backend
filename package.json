@@ -1,0 +1,42 @@
+{
+  "name": "mean-auth-backend-boilerplate",
+  "version": "0.0.0",
+  "description": "User Auth RESTful API for MEAN Stack applications",
+  "private": true,
+  "scripts": {
+    "commit": "git-cz",
+    "log": "changelog",
+    "dev": "nodemon ./bin/www",
+    "lint": "eslint */**.js; exit 0 ",
+    "prod": "NODE_ENV=production ./bin/www",
+    "start": "node ./bin/www",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "2.8.3",
+    "debug": "~2.6.3",
+    "eslint": "3.19.0",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "mongoose": "4.9.4",
+    "morgan": "~1.8.1",
+    "snyk": "^1.29.0"
+  },
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog-emoji": "0.1.0",
+    "eslint": "3.19.0",
+    "eslint-plugin-one-variable-per-var": "0.0.3",
+    "generate-changelog": "1.1.0",
+    "nodemon": "1.11.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog-emoji"
+    }
+  },
+  "snyk": true
+}

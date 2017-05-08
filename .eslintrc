@@ -1,0 +1,18 @@
+{
+  "env": {
+	"node": true,
+	"es6": true
+  },
+  "rules": {
+	"no-eval": 2,
+	"no-extra-semi": 2,
+	"no-empty": 2,
+	"no-with": 2,
+	"strict": 2,
+	"array-bracket-spacing": 2,
+	"no-unused-vars": 1,
+	"camelcase": 1,
+	"quotes": ["warn", "single"]
+  },
+  "plugins": [ "eslint-plugin-one-variable-per-var" ]
+}
