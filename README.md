@@ -1,11 +1,14 @@
-# Restful API Boilerplate for Node.js/Expressjs Applications
+# User Auth MEAN Stack Boilerplate
 
-[![Travis CI](https://img.shields.io/travis/amandeepmittal/restapi-boilerplate.svg?style=flat-square)](https://travis-ci.org/amandeepmittal/restapi-boilerplate)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 This minimalistic repo is production ready!
 
-![](https://trainingprdcdnendpoint.azureedge.net/Images/nodejs-520.jpg)
+## Technology and Modules
+* Nodejs/ExpressJS
+* MongoDB
+* Mongoose _ODM_
+* JWT Tokens
 
 ## Getting Started
 To get the node server running locally:
@@ -15,7 +18,7 @@ To get the node server running locally:
 
 ### Application Structure
 * `app.js`: The entry point to our application. This file defines express server. It also requires API routes.
-* `config/`: This directory contains MONGODB database configuration and connection connection using Mongoose. All other configuration (such as auth) must go here.
+* `config/`: This directory contains MONGODB database configuration and connection using Mongoose. All other configuration (such as JWT tokens) should go here.
 * `routes/api`: Contains all the rest API routes.
 * `models/`: Must contain database schema
 
