@@ -22,8 +22,10 @@
     "eslint": "6.5.1",
     "express": "~4.15.2",
     "jade": "~1.11.0",
-    "jwt-simple": "0.5.1",
+
+    "jwt-simple": "0.5.6",
     "moment": "2.24.0",
+
     "mongoose": "5.7.6",
     "morgan": "~1.9.1",
     "snyk": "^1.29.0"
